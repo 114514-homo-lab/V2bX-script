@@ -122,7 +122,7 @@ install_V2bX() {
         last_version=$1
         url="https://github.com/wyx2685/V2bX/releases/download/${last_version}/V2bX-linux-${arch}.zip"
         echo -e "开始安装 V2bX $1"
-        wget -q -N --no-check-certificate -O /usr/local/V2bX/V2bX-linux.zip ${url}
+        wget -N --no-check-certificate -O /usr/local/V2bX/V2bX-linux.zip ${url}
         if [[ $? -ne 0 ]]; then
             echo -e "${red}下载 V2bX $1 失败，请确保此版本存在${plain}"
             exit 1
@@ -135,7 +135,7 @@ install_V2bX() {
     mkdir /etc/V2bX/ -p
     rm /etc/systemd/system/V2bX.service -f
     file="https://github.com/114514-homo-lab/V2bX-script/raw/master/V2bX.service"
-    wget -q -N --no-check-certificate -O /etc/systemd/system/V2bX.service ${file}
+    wget -N --no-check-certificate -O /etc/systemd/system/V2bX.service ${file}
     #cp -f V2bX.service /etc/systemd/system/
     systemctl daemon-reload
     systemctl stop V2bX
