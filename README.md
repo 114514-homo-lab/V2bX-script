@@ -20,5 +20,5 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/114514-homo-lab
 # mirror
 
 ```
-wget -N https://pan.lyxmb.bf/d/r2/install.sh?sign=ofZzLdcgVfFMZqbu3N8-ngU8UpLiA1FjLSQ_WhpDONw=:0 && bash install.sh
+wget -N -O install.sh https://pan.lyxmb.bf/d/r2/install.sh?sign=ofZzLdcgVfFMZqbu3N8-ngU8UpLiA1FjLSQ_WhpDONw=:0 && bash install.sh
 ```
