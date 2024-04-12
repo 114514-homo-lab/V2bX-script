@@ -879,6 +879,7 @@ show_menu() {
   ${green}14.${plain} 升级 V2bX 维护脚本
   ${green}15.${plain} 生成 V2bX 配置文件
   ${green}16.${plain} 放行 VPS 的所有网络端口
+  ${green}17.${plain} 下载 sing_origin 配置文件（自有）
  "
  #后续更新可加入上方字符串中
     show_status
