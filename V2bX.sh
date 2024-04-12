@@ -825,6 +825,14 @@ open_ports() {
     echo -e "${green}放开防火墙端口成功！${plain}"
 }
 
+download_sing() {
+    read -rp "请输入链接：" host
+    wget -O /etc/V2bX/sing_origin.json ${host}
+    restart 0
+}
+    
+    
+
 show_usage() {
     echo "V2bX 管理脚本使用方法: "
     echo "------------------------------------------"
@@ -894,6 +902,7 @@ show_menu() {
         14) update_shell ;;
         15) generate_config_file ;;
         16) open_ports ;;
+        17) download_sing ;;
         *) echo -e "${red}请输入正确的数字 [0-16]${plain}" ;;
     esac
 }
